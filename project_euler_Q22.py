@@ -1,26 +1,35 @@
-# 
-# Solution to Project Euler problem 22
-# Copyright (c) Project Nayuki. All rights reserved.
-# 
-# https://www.nayuki.io/page/project-euler-solutions
-# https://github.com/nayuki/Project-Euler-solutions
-# 
+# Copyright (c) DGKang234. All rights reserved.
+
+"""
+Question 22:
+Using names.txt (right click and 'Save Link/Target As...'), a 46K text file containing over five-thousand first names, begin by sorting it into alphabetical order. Then working out the alphabetical value for each name, multiply this value by its alphabetical position in the list to obtain a name score.
+
+For example, when the list is sorted into alphabetical order, COLIN, which is worth 3 + 15 + 12 + 9 + 14 = 53, is the 938th name in the list. So, COLIN would obtain a score of 938 × 53 = 49714.
+
+What is the total of all the name scores in the file?
+"""
+
 import time
 
-# We apply straightforward algorithms to sort the names, sum the letter values, and multiply by the position.
+'''
+solution:
+sort the names, sum the letter values, and multiply by the position.
+----- process time : 0.0050089999999999996 seconds -----
+'''
+
 def compute():
     '''
-    for (i, name) in enumerate(sorted(NAMES)):
-        for c in name:
-            print(i+1, name, c, ord(c), ord('A'))
+    total_scores = 0
+    for (i, name) in enumerate(sorted(collections)):
+        for x in name:
+            print(i+1, name, x, ord(x), ord('A'))
+            total_score += ((i+1) * ord(x) - ord('A') + 1)      # i+1 = index of the name, ord(x) - ord('A') + 1 = index of the alphabet
     '''
-    tot_scores = sum((i + 1) * (ord(c) - ord('A') + 1) for (i, name) in enumerate(sorted(NAMES)) for c in name)
+    total_scores = sum((i + 1) * (ord(x) - ord('A') + 1) for (i, name) in enumerate(sorted(collection)) for x in name)
+    
+    return total_scores 
 
-    return tot_scores 
-
-
-
-NAMES = [  # 10 strings per line, except final line
+collection = [  
 	"MARY", "PATRICIA", "LINDA", "BARBARA", "ELIZABETH", "JENNIFER", "MARIA", "SUSAN", "MARGARET", "DOROTHY",
 	"LISA", "NANCY", "KAREN", "BETTY", "HELEN", "SANDRA", "DONNA", "CAROL", "RUTH", "SHARON",
 	"MICHELLE", "LAURA", "SARAH", "KIMBERLY", "DEBORAH", "JESSICA", "SHIRLEY", "CYNTHIA", "ANGELA", "MELISSA",

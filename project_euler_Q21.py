@@ -10,6 +10,16 @@ Evaluate the sum of all the amicable numbers under 10000.
 import numpy as np
 import time
 
+'''
+solution:
+1. get list of proper divisor up to 10000
+2. get another list of proper divisor of the elements of the list
+3. collect amicable numbers
+----- process time : 2.94942 seconds -----
+'''
+
+
+
 start = time.process_time()
 def prop_divisor(num):
     amicable_num = set()
