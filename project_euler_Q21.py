@@ -12,22 +12,25 @@ import time
 
 start = time.process_time()
 def prop_divisor(num):
-    divisor = []
-    divisor_candi = list(range(1, num))
-    for i in divisor_candi:
-        #print(i)
-        if num % i == 0:
-            divisor.append(i)
- 
-    divisor.sort() 
-    print(f"List of the proper divisor for {num} is : ")
-    print(divisor)
-    print()
-    print(f"Sum of the proper divisor for {num} is : ")
-    print(sum(divisor))
-    return divisor 
+    amicable_num = set()
+    for i in range(1, num):
+        divisor = 0
+        divisor_2 = 0
+        for j in list(range(1, i)):
+            if (i % j) == 0:
+                divisor += j 
+    
+        for k in range(1, divisor):
+            if (divisor % k) == 0:
+                divisor_2 += k
+        
+        if i == divisor_2 and divisor != divisor_2: 
+                amicable_num.add(divisor_2)
 
-prop_divisor(10000)
+    return sum(amicable_num) 
+
+if __name__ == '__main__':
+    print(prop_divisor(10000))
 
 print(f"----- process time : {time.process_time() - start} seconds -----")
 

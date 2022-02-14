@@ -16,7 +16,7 @@ def prop_divisor(num):
     divisor_candi = list(range(1, num))
     for i in divisor_candi:
         #print(i)
-        if num % i == 0:
+        if num % i == 0:            # get the least common factor list
             divisor.append(i)
  
     divisor.sort() 
