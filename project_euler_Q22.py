@@ -13,18 +13,31 @@ import time
 
 '''
 solution:
-sort the names, sum the letter values, and multiply by the position.
+1. sort the names alphabetical order, 
+2. sum the index of alphabet in each names, 
+3. sum all of the score
+4. multiply by the position.
 ----- process time : 0.0050089999999999996 seconds -----
 '''
 
 def compute():
     '''
+    #Comprehesive solution
     total_scores = 0
-    for (i, name) in enumerate(sorted(collections)):
+    for (i, name) in enumerate(sorted(collection)):
+        score = 0
         for x in name:
-            print(i+1, name, x, ord(x), ord('A'))
-            total_score += ((i+1) * ord(x) - ord('A') + 1)      # i+1 = index of the name, ord(x) - ord('A') + 1 = index of the alphabet
+            print(i+1, ord(x)-ord('A')+1, name, x, (i+1)*(ord(x) - ord('A') + 1))
+            score += ((i+1) * (ord(x)-ord('A')+1))
+        print("Score of the each name")
+        print(score)
+        
+        total_scores += score
+    print("answer")
+    print(total_scores)
+    #----- process time : 0.06455999999999999 seconds ----- 
     '''
+
     total_scores = sum((i + 1) * (ord(x) - ord('A') + 1) for (i, name) in enumerate(sorted(collection)) for x in name)
     
     return total_scores 

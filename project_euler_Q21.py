@@ -21,6 +21,7 @@ solution:
 
 
 start = time.process_time()
+'''
 def prop_divisor(num):
     amicable_num = set()
     for i in range(1, num):
@@ -38,9 +39,39 @@ def prop_divisor(num):
                 amicable_num.add(divisor_2)
 
     return sum(amicable_num) 
+'''
+# We first compute a table of sum-of-proper-divisors, then we use it to test which numbers are amicable.
+# This approach differs from the Java implementation because trying to directly compute
+# the proper-divisor-sum of each number by brute force is unacceptably slow in Python.
 
-if __name__ == '__main__':
-    print(prop_divisor(10000))
+#def compute():
+# Compute sum of proper divisors for each number
+divisorsum = [0] * 300                        # prepare an array
+print(divisorsum)
+print()
+for i in range(1, len(divisorsum)):             # 1 to 9999
+    for j in range(i * 2, len(divisorsum), i):  
+        divisorsum[j] += i
+        #print(i, j, divisorsum)
+print()
+print()
+print(divisorsum)
+'''	
+# Find all amicable pairs within range
+ans = 0
+for i in range(1, len(divisorsum)):
+    j = divisorsum[i]
+    print(i, j, len(divisorsum))
+    if j != i and j < len(divisorsum) and divisorsum[j] == i:
+        print('#', i, j)
+        ans += i
+        print(ans)
+#return None
+'''
+
+
+#if __name__ == '__main__':
+#    print(prop_divisor(10000))
 
 print(f"----- process time : {time.process_time() - start} seconds -----")
 

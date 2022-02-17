@@ -30,7 +30,6 @@ end_time_measure(start_time, 'Done in: ')
 q2 = '\nQ2 - Even Fibonacci numbers'
 print(q2)
 start_time = start_time_measure('Calculating...')
-tot = 0
 a = 1
 b = 1
 c = 0
