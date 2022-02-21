@@ -9,9 +9,9 @@ import time
 
 def comp():
     n = 600851475143
-    i = 2
-    while i^2 < n:
-        while n % i == 0:
+    i = 1
+    while i < n**1/2:
+        if n % i == 0:
             n = n / i
         i = i + 1
     
@@ -22,4 +22,4 @@ if __name__ == "__main__":
     print(comp())
     print(f"----- process time : {time.process_time() - start} seconds -----")
 
-
+# ----- process time : 0.000735000000000003 seconds -----
