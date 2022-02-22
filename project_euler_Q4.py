@@ -13,17 +13,15 @@ def comp():
     for i in range(100, 1000):
         for j in range(100, 1000):
             numb = i*j
-            n = [str(x) for x in str(numb)]
+            n = [x for x in str(numb)]
             
             half = int(len(n)/2)
             if half == 3:
                 first_half = n[0: half]
                 second_half = n[half: ]
 
-                first_int = list(map(int, first_half)) 
-                second_int = list(map(int, second_half))
-                second_int.reverse() 
-                if first_int == second_int:
+                second_half.reverse() 
+                if first_half == second_half:
                     palindromic.add(numb) 
 
     return sorted(palindromic)[-1]
@@ -33,3 +31,4 @@ if __name__ == "__main__":
     print(comp())
     print(f"----- process time : {time.process_time() - start} seconds -----")
 
+# ----- process time : 0.36790100000000003 seconds -----
