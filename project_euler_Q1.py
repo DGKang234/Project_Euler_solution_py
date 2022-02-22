@@ -1,5 +1,5 @@
 # 
-# Solution to Project Euler problem 4
+# Solution to Project Euler problem 1
 # Copyright (c) Dong-gi Kang. All rights reserved.
 # 
 # https://github.com/DGKang234/Project_Euler_solution_py
