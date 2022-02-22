@@ -1,5 +1,5 @@
 # Project_Euler_solution_py
-=======================
+
 
 This repository is a collection of project Euler mathematics questions.
 
@@ -9,7 +9,7 @@ https://donggikang.com/category/project-euler/
 https://github.com/DGKang234/Project_Euler_solution_py
 
 
-
+----
 Copyright © 2021 Dong gi Kang. All rights reserved. No warranty.
 
 This code is provided for reference only. You may republish any of this code verbatim with author and URL info intact.
