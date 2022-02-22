@@ -1,4 +1,12 @@
+#
+# Solution to Project Euler problem 23
+# Copyright (c) Dong-gi Kang. All rights reserved.
+#
+# https://github.com/DGKang234/Project_Euler_solution_py
+# https://donggikang.com/category/project-euler/
+#
 '''
+Q23
 Non-abundant sums
 A perfect number is a number for which the sum of its proper divisors is exactly equal to the number. 
 For example, the sum of the proper divisors of 28 would be 1 + 2 + 4 + 7 + 14 = 28, which means that 28 is a perfect number.

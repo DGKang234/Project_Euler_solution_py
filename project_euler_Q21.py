@@ -1,3 +1,10 @@
+# 
+# Solution to Project Euler problem 21
+# Copyright (c) Dong-gi Kang. All rights reserved.
+# 
+# https://github.com/DGKang234/Project_Euler_solution_py
+# https://donggikang.com/category/project-euler/
+# 
 """ 
 Q21 - Let d(n) be defined as the sum of proper divisors of n (numbers less than n which divide evenly into n).
 If d(a) = b and d(b) = a, where a ≠ b, then a and b are an amicable pair and each of a and b are called amicable numbers.

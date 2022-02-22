@@ -1,3 +1,10 @@
+# 
+# Solution to Project Euler problem 3
+# Copyright (c) Dong-gi Kang. All rights reserved.
+# 
+# https://github.com/DGKang234/Project_Euler_solution_py
+# https://donggikang.com/category/project-euler/
+# 
 '''
 The prime factors of 13195 are 5, 7, 13 and 29.
 

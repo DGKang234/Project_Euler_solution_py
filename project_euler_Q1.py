@@ -1,3 +1,10 @@
+# 
+# Solution to Project Euler problem 4
+# Copyright (c) Dong-gi Kang. All rights reserved.
+# 
+# https://github.com/DGKang234/Project_Euler_solution_py
+# https://donggikang.com/category/project-euler/
+# 
 '''
 If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
 

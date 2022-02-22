@@ -1,3 +1,10 @@
+# 
+# Solution to Project Euler problem 4
+# Copyright (c) Dong-gi Kang. All rights reserved.
+# 
+# https://github.com/DGKang234/Project_Euler_solution_py
+# https://donggikang.com/category/project-euler/
+# 
 '''
 A palindromic number reads the same both ways. 
 The largest palindrome made from the product of two 2-digit numbers is 9009 = 91 × 99.

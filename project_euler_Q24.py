@@ -1,3 +1,11 @@
+#
+# Solution to Project Euler problem 24
+# Copyright (c) Dong-gi Kang. All rights reserved.
+#
+# https://github.com/DGKang234/Project_Euler_solution_py
+# https://donggikang.com/category/project-euler/
+#
+
 '''
 Q24 - Lexicographic permutations:
 
