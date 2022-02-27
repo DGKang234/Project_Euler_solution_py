@@ -29,4 +29,4 @@ if __name__ == "__main__":
     print(comp())
     print(f"----- process time : {time.process_time() - start} seconds -----")
 
-
+# ----- process time : 3.500000000000031e-05 seconds -----
