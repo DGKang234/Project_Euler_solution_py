@@ -38,7 +38,7 @@ def comp():
                 if (y > 1900 and d == 0 and total % 7 == 6): 
                     count += 1 
                 total += 1
-    
+            #print(y, m+1, day) 
     return total, count 
 
 
