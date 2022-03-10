@@ -1,3 +1,11 @@
+#
+# Solution to Project Euler problem 1
+# Copyright (c) Dong-gi Kang. All rights reserved.
+#
+# https://github.com/DGKang234/Project_Euler_solution_py
+# https://donggikang.com/category/project-euler/
+#
+
 '''
 Q7 - 1000st prime
 By listing the first six prime numbers: 2, 3, 5, 7, 11, and 13, we can see that the 6th prime is 13.
