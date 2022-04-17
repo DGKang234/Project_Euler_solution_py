@@ -22,19 +22,15 @@ digits = '''73167176531330624919225119674426574742355349194934
 import time
 
 def comp():
-    list_number_str = digits.strip().split('\n')
-    list_number = [int(x) for x in list_number_str]
-    str_list_number = [str(x) for x in list_number]
-    number = ''.join(str_list_number)
-    
+    numbers = digits.replace('\n', '')
+     
     length_adjacent = 13
     max_ = 0
-    
-    for i in range(0, len(number) - length_adjacent + 1):
+    for i in range(0, len(numbers) - length_adjacent + 1):
        
         product = 1      
         for j in range(i, i + length_adjacent):
-            product *= int(number[j: j + 1])
+            product *= int(numbers[j: j + 1])
     
         if product > max_:
             max_ = product
@@ -46,4 +42,5 @@ if __name__ == "__main__":
     print(comp())
     print(f"----- process time : {time.process_time() - start} seconds -----")
 
-# ----- process time : 0.0018950000000000009 seconds -----
+# ----- process time : 0.0025610000000000008 seconds ----- 
+
