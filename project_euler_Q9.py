@@ -1,5 +1,5 @@
 # 
-# Solution to Project Euler problem 1
+# Solution to Project Euler problem 9
 # Copyright (c) Dong-gi Kang. All rights reserved.
 # 
 # https://github.com/DGKang234/Project_Euler_solution_py
@@ -25,30 +25,30 @@ def comp():
     Easy simple solution without fancy mathematics
     '''
     #for i in range(1, 1000):
-        #for j in range(1, i):
-        #    if i != j:
+    #    for j in range(1, i):
+    #        if i != j:
 
-        #        k = i**2 + j**2 
-        #        root_k = math.sqrt(k)
-        #        if i + j + root_k == 1000:
-        #            print("answer")
-        #            print(i, j, root_k)
-        #            print(i*j*root_k)
-        #            print()
+    #            k = i**2 + j**2 
+    #            root_k = math.sqrt(k)
+    #            if i + j + root_k == 1000:
+    #                print("answer")
+    #                print(i, j, root_k)
+    #                print(i*j*root_k)
+    #                print()
 
     '''
     Euclid's formula a = (i**2 -j**2), b = ij, c = (i**2 + j**2)/2
     0 < a < c
     '''
 
-    S = 1000
-    for m in range(math.ceil(math.sqrt(S / 2)),
+    LAMBDA = 1000
+    for m in range(math.ceil(math.sqrt(LAMBDA / 2)),    # the range is obtained from the 0 < a < c contraint
                    math.floor(math.sqrt(S) + 1)):
-        a = S - S ** 2 / (2 * m ** 2)
+        a = LAMBDA - LAMBDA ** 2 / (2 * m ** 2)
         if a.is_integer():
             a = int(a)
-            b = S - m ** 2
-            c = S - a - b
+            b = LAMBDA - m ** 2
+            c = LAMBDA - a - b
     
             return a, b, c, a * b * c 
 
